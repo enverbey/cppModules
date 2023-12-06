@@ -1,11 +1,8 @@
-NAME	=	violenceUnnecessary
+NAME	=	replace
 
 FLAG	=	-Wall -Wextra -Werror -std=c++98
 
-SRC		=	./src/Main.cpp \
-			./src/HumanA.cpp \
-			./src/HumanB.cpp \
-			./src/Weapon.cpp \
+SRC		=	Main.cpp
 
 CC		=	g++
 

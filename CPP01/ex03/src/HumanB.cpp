@@ -1,29 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*   HumanB.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: envyilma <envyilma@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/06 13:27:17 by envyilma          #+#    #+#             */
-/*   Updated: 2023/12/06 13:27:18 by envyilma         ###   ########.fr       */
+/*   Created: 2023/12/06 10:46:10 by envyilma          #+#    #+#             */
+/*   Updated: 2023/12/06 10:55:03 by envyilma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../include/Zombie.hpp"
+# include "../include/HumanB.hpp"
 
-Zombie::Zombie(std::string arg)
+HumanB::HumanB(std::string argName) : _name(argName){}
+
+HumanB::~HumanB(){}
+
+void	HumanB::attack(void)
 {
-	this->_name = arg;
-	std::cout << "Zombie " << _name << " is created" << std::endl;
+	std::cout << this->_name << " attacks with their " << this->weapon->getType() << std::endl;
 }
 
-Zombie::~Zombie()
+void	HumanB::setWeapon(Weapon &argWeapon)
 {
-	std::cout << "Zombie " << _name << " is destroyed" << std::endl;
+	this->weapon = &argWeapon;
 }
 
-void	Zombie::announce()
-{
-	std::cout << _name << ": BraiiiiiiinnnzzzZ..." << std::endl;
-}

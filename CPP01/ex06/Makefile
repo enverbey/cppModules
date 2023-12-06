@@ -1,11 +1,9 @@
-NAME	=	violenceUnnecessary
+NAME	=	harl
 
 FLAG	=	-Wall -Wextra -Werror -std=c++98
 
 SRC		=	./src/Main.cpp \
-			./src/HumanA.cpp \
-			./src/HumanB.cpp \
-			./src/Weapon.cpp \
+			./src/Harl.cpp
 
 CC		=	g++
 

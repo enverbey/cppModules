@@ -1,5 +1,18 @@
-#include "HumanA.hpp"
-#include "HumanB.hpp"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: envyilma <envyilma@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/12/06 10:46:08 by envyilma          #+#    #+#             */
+/*   Updated: 2023/12/06 10:46:09 by envyilma         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "../include/HumanA.hpp"
+#include "../include/HumanB.hpp"
+#include "../include/Weapon.hpp"
 
 int main()
 {
@@ -12,6 +25,7 @@ int main()
     }
     {
         Weapon club = Weapon("crude spiked club");
+
         HumanB jim("Jim");
         jim.setWeapon(club);
         jim.attack();
